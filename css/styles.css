@@ -1,0 +1,45 @@
+html {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana;
+	font-size: 10pt;
+	overflow: hidden;
+	max-height:100%;
+	max-width:100%;
+}
+
+
+.descriptionText {
+	position: absolute;
+	top: 100px;
+	right: 0;
+	left: 0;
+	margin: auto;
+	width: 500px;
+	font-family: Arial;
+	font-size: 12px;
+	color: #aabbcc;
+	text-align: justify;
+}
+
+a:link, 
+a:active,
+a:visited {
+	display: block;
+	font-size: 13px;
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	display: block;
+	font-size: 13px;
+	color: #fff;
+	text-decoration: underline;
+}

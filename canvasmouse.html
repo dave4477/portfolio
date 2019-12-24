@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Collisions - Physijs</title>
+	
+
+</head>
+
+<body>
+
+	<div id="viewport">
+	
+		<canvas width="1280" height="1024" onmousemove="onMove()"></canvas>
+	
+	</div>
+	
+	<script>
+	
+	var canvas = document.getElementsByTagName("canvas")[0];
+	
+	canvas.addEventListener('onmousemove', (e) => onMove);
+	
+	function onMove(event) {
+	
+		console.log(event);
+	}
+	
+	</script>
+	
+</body>
+</html>

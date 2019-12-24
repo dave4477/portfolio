@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>three.js webgl - geometry - text</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	</head>
+	<body>
+
+	<div style="position:absolute; width:10px; height:10px; background:#ff0000; border:1px solid #000" id="myDiv"></div>
+	</body>
+	
+	<script>
+	var posLeft = 100;
+	var posTop = 100;
+	var radius = 50;
+	var angle = 0;
+	var speed = 0.025;
+	var angle = 0;
+	
+	function getEl(id) {
+		return document.getElementById(id);
+	}
+	
+	function orbitCalculation(radius) {
+
+		angle += speed;		
+
+		return {
+			x: posLeft + radius * Math.cos(angle),
+			y: posTop + radius * Math.sin(angle)
+		}
+
+		
+	}
+	
+	function render() {
+		const el = getEl('myDiv');
+		el.style.left = orbitCalculation(50).x + "px";
+		el.style.top = orbitCalculation(50).y + "px";
+		window.requestAnimationFrame(render);
+	}
+	render();
+	
+	</script>
+</html>
